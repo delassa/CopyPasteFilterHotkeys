@@ -13,7 +13,7 @@ using ScheduleOne.ItemFramework;
 using ScheduleOne.DevUtilities;
 #endif
 
-[assembly: MelonInfo(typeof(CopyPasteFilterHotkeys.CopyPasteFilterHotkeys), "CopyPasteFilterHotkeys", "0.1.0", "Delassa", null)] // Change this
+[assembly: MelonInfo(typeof(CopyPasteFilterHotkeys.CopyPasteFilterHotkeys), "CopyPasteFilterHotkeys", "1.0.0", "Delassa", null)]
 [assembly: MelonGame("TVGS", "Schedule I")]
 
 namespace CopyPasteFilterHotkeys
