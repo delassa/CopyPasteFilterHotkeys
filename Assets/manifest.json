@@ -3,7 +3,5 @@
   "version_number": "1.0.0",
   "website_url": "https://github.com/delassa/CopyPasteFilterHotkeys",
   "description": "Adds hotkeys to copy and paste filters between item slots",
-  "dependencies": [
-    "LavaGang-MelonLoader-0.7.0",
-  ]
+  "dependencies": ["LavaGang-MelonLoader-0.7.0"]
 }
