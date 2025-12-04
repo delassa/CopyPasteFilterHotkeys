@@ -1,2 +1,7 @@
-/CopyPasteFilterHotkeys/bin/
-/CopyPasteFilterHotkeys/obj/
+.idea/
+*.dll
+*.zip
+obj/
+bin/
+*.user
+.vs/
