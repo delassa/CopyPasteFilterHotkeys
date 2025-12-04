@@ -45,7 +45,6 @@ namespace CopyPasteFilterHotkeys
                         Singleton<ItemUIManager>.Instance.HoveredSlot.assignedSlot.PlayerFilter != null &&
                         Singleton<ItemUIManager>.Instance.HoveredSlot.assignedSlot.CanPlayerSetFilter)
                     {
-                        MelonLogger.Msg("Copying filter from hovered item slot");
                         _copiedFilter = Singleton<ItemUIManager>.Instance.HoveredSlot.assignedSlot.PlayerFilter;
                         Singleton<ItemUIManager>.Instance.HoveredSlot.UpdateUI();
                     }
@@ -57,7 +56,6 @@ namespace CopyPasteFilterHotkeys
                         _copiedFilter != null &&
                         Singleton<ItemUIManager>.Instance.HoveredSlot.assignedSlot.CanPlayerSetFilter)
                     {
-                        MelonLogger.Msg("Pasting Filter onto hovered item slot.");
                         Singleton<ItemUIManager>.Instance.HoveredSlot.assignedSlot.SetPlayerFilter(_copiedFilter);
                         Singleton<ItemUIManager>.Instance.HoveredSlot.UpdateUI();
                     }
