@@ -41,8 +41,7 @@ namespace CopyPasteFilterHotkeys
             {
                 if (Input.GetKeyDown(_copyKey.Value))
                 {
-                    if (Singleton<ItemUIManager>.InstanceExists &&
-                        Singleton<ItemUIManager>.Instance.HoveredSlot.assignedSlot.PlayerFilter != null &&
+                    if (Singleton<ItemUIManager>.Instance.HoveredSlot.assignedSlot.PlayerFilter != null &&
                         Singleton<ItemUIManager>.Instance.HoveredSlot.assignedSlot.CanPlayerSetFilter)
                     {
                         _copiedFilter = Singleton<ItemUIManager>.Instance.HoveredSlot.assignedSlot.PlayerFilter;
@@ -52,8 +51,7 @@ namespace CopyPasteFilterHotkeys
 
                 if (Input.GetKeyDown(_pasteKey.Value))
                 {
-                    if (Singleton<ItemUIManager>.InstanceExists && 
-                        _copiedFilter != null &&
+                    if (_copiedFilter != null &&
                         Singleton<ItemUIManager>.Instance.HoveredSlot.assignedSlot.CanPlayerSetFilter)
                     {
                         Singleton<ItemUIManager>.Instance.HoveredSlot.assignedSlot.SetPlayerFilter(_copiedFilter);
