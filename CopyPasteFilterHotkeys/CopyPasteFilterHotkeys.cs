@@ -44,7 +44,7 @@ namespace CopyPasteFilterHotkeys
                     if (Singleton<ItemUIManager>.Instance.HoveredSlot.assignedSlot.PlayerFilter != null &&
                         Singleton<ItemUIManager>.Instance.HoveredSlot.assignedSlot.CanPlayerSetFilter)
                     {
-                        _copiedFilter = Singleton<ItemUIManager>.Instance.HoveredSlot.assignedSlot.PlayerFilter;
+                        _copiedFilter = Singleton<ItemUIManager>.Instance.HoveredSlot.assignedSlot.PlayerFilter.Clone();
                         Singleton<ItemUIManager>.Instance.HoveredSlot.UpdateUI();
                     }
                 }
@@ -54,7 +54,7 @@ namespace CopyPasteFilterHotkeys
                     if (_copiedFilter != null &&
                         Singleton<ItemUIManager>.Instance.HoveredSlot.assignedSlot.CanPlayerSetFilter)
                     {
-                        Singleton<ItemUIManager>.Instance.HoveredSlot.assignedSlot.SetPlayerFilter(_copiedFilter);
+                        Singleton<ItemUIManager>.Instance.HoveredSlot.assignedSlot.SetPlayerFilter(_copiedFilter.Clone());
                         Singleton<ItemUIManager>.Instance.HoveredSlot.UpdateUI();
                     }
                 }

@@ -22,10 +22,10 @@
 		<AssemblyName>CopyPasteFilterHotkeys_IL2Cpp</AssemblyName> <!--Change this-->
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)' == 'MONO'">
-		<S1Dir>C:\Program Files (x86)\Steam\steamapps\common\Schedule I Alternate</S1Dir> <!--Change this-->
+		<S1Dir>C:\S1-modding\gamefiles\Schedule I Mono</S1Dir> <!--Change this-->
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)' == 'IL2CPP'">
-		<S1Dir>C:\Program Files (x86)\Steam\steamapps\common\Schedule I</S1Dir> <!--Change this-->
+		<S1Dir>C:\S1-modding\gamefiles\Schedule I IL2CPP</S1Dir> <!--Change this-->
 	</PropertyGroup>
 
 
