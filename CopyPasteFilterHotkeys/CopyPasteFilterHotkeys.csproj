@@ -4,8 +4,8 @@
 		<Nullable>disable</Nullable> <!--Change this-->
 		<LangVersion>default</LangVersion>
 		<IsPackable>false</IsPackable>
-		<AssemblyVersion>1.0.0.0</AssemblyVersion>
-		<FileVersion>1.0.0.0</FileVersion>
+		<AssemblyVersion>1.0.1.0</AssemblyVersion>
+		<FileVersion>1.0.1.0</FileVersion>
 		<NeutralLanguage>en-US</NeutralLanguage>
 		<LangVersion>latest</LangVersion>
 		<ImplicitUsings>enable</ImplicitUsings>
@@ -951,6 +951,6 @@
 	</ItemGroup>
 
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
-		<Exec Command="tasklist | findstr /I &quot;Schedule.*I.exe&quot; &gt;nul &amp;&amp; taskkill /F /IM &quot;Schedule I.exe&quot;&#xD;&#xA;COPY &quot;$(TargetPath)&quot; &quot;$(S1Dir)\Mods&quot;&#xD;&#xA;START &quot;&quot; &quot;$(S1Dir)\Schedule I.exe&quot;" />
+		<!--<Exec Command="tasklist | findstr /I &quot;Schedule.*I.exe&quot; &gt;nul &amp;&amp; taskkill /F /IM &quot;Schedule I.exe&quot;&#xD;&#xA;COPY &quot;$(TargetPath)&quot; &quot;$(S1Dir)\Mods&quot;&#xD;&#xA;START &quot;&quot; &quot;$(S1Dir)\Schedule I.exe&quot;" />-->
 	</Target>
 </Project>
